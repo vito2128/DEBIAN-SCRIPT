@@ -3,10 +3,14 @@ xdg-user-dirs-update
 sudo apt update
 sudo apt upgrade
 sudo dpkg --add-architecture i386
-sudo apt install make nala mate-polkit libgirepository-2.0-dev cargo libcairo2-dev xfce4-settings sakura firmware-linux firmware-sof-signed pavucontrol pipewire cmake meson build-essential pipx mousepad xarchiver 7zip thunar thunar-volman thunar-archive-plugin gvfs git firefox-esr zram-tools preload ristretto virt-manager extrepo steam wine winetricks gamemode libx11-dev libxinerama-dev libxext-dev libxft-dev flatpak 
+sudo apt install make nala mate-polkit libx11-xcb-dev libxcursor-dev libgirepository-2.0-dev cargo libcairo2-dev xfce4-settings sakura firmware-linux firmware-sof-signed pavucontrol pipewire cmake meson build-essential pipx mousepad xarchiver 7zip thunar thunar-volman thunar-archive-plugin gvfs git firefox-esr zram-tools preload ristretto virt-manager extrepo steam wine winetricks gamemode libx11-dev libxinerama-dev libxext-dev libxft-dev flatpak 
 pipx install waypaper
 cd /home/vito/.local/bin
 sudo cp waypaper /usr/bin
+cd
+cargo install xcolor
+cd /home/vito/.cargo/bin
+sudo cp xcolor /usr/bin
 cd
 sudo extrepo enable xlibre
 sudo apt update
